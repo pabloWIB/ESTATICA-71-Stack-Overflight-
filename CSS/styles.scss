@@ -1,0 +1,56 @@
+// 1 COLORS DEFIN
+
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+
+// 2 NEUTRAL COLORS
+
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+// 2 NEUTRAL COLORS ---
+
+// 1 COLORS DEFIN ---
+
+
+// FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+// FONTS ---
+
+body{
+    nav{
+        background: red;
+        display: flex;
+        align-items: center;
+        place-content: center;
+        margin: 0 auto;
+        width: 100%;
+        >:nth-child(1){
+            background: white;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1440px;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                place-content: center;
+            }
+            >:nth-child(2), >:nth-child(3){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

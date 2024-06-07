@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+.navigationIDAnimation {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 body nav {
-  background: red;
+  background: hsl(0, 0%, 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,9 +22,20 @@ body nav {
   place-content: center;
   margin: 0 auto;
   width: 100%;
+  -webkit-box-shadow: 0px 0.1px 1.5px 0.1px hsl(233, 8%, 62%);
+          box-shadow: 0px 0.1px 1.5px 0.1px hsl(233, 8%, 62%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 body nav > :nth-child(1) {
-  background: white;
+  background: hsl(0, 0%, 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,10 +48,10 @@ body nav > :nth-child(1) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 85%;
   max-width: 1440px;
 }
-body nav > :nth-child(1) > :nth-child(1) {
+body nav > :nth-child(1) > :nth-child(1), body nav > :nth-child(1) > :nth-child(2), body nav > :nth-child(1) > :nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +67,52 @@ body nav > :nth-child(1) > :nth-child(1) {
           justify-content: center;
   place-content: center;
 }
-body nav > :nth-child(1) > :nth-child(2), body nav > :nth-child(1) > :nth-child(3) {
+body nav > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  max-width: 10rem;
+}
+body nav > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+  cursor: pointer;
+}
+body nav > :nth-child(1) > :nth-child(2) {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.75rem;
+}
+body nav > :nth-child(1) > :nth-child(2) > div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body nav > :nth-child(1) > :nth-child(2) > div > :nth-child(1), body nav > :nth-child(1) > :nth-child(2) > div > :nth-child(3) {
+  height: 0.35rem;
+}
+body nav > :nth-child(1) > :nth-child(2) > div > :nth-child(2) a {
+  all: unset;
+  cursor: pointer;
+  color: hsl(233, 8%, 62%);
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+body nav > :nth-child(1) > :nth-child(2) > div > :nth-child(2) a:hover {
+  color: hsl(233, 26%, 24%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body nav > :nth-child(1) > :nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,4 +126,188 @@ body nav > :nth-child(1) > :nth-child(2), body nav > :nth-child(1) > :nth-child(
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+body nav > :nth-child(1) > :nth-child(3) > :nth-child(1) button {
+  all: unset;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(hsl(136, 65%, 51%)), to(hsl(192, 70%, 51%)));
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  z-index: 1;
+  padding: 0.9rem 1.9rem;
+  border-radius: 50px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 17px;
+}
+body nav > :nth-child(1) > :nth-child(3) > :nth-child(1) button:hover {
+  color: hsl(0, 0%, 98%);
+}
+body nav > :nth-child(1) > :nth-child(3) > :nth-child(1) button::before {
+  border-radius: 50px;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#83E3A6), to(#7ED4E3));
+  background-image: linear-gradient(to right, #83E3A6, #7ED4E3);
+  z-index: -1;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+body nav > :nth-child(1) > :nth-child(3) > :nth-child(1) button:hover::before {
+  opacity: 0.8;
+}
+body nav > :nth-child(1) > :nth-child(3) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-content: center;
+  display: none;
+}
+body nav > :nth-child(1) > :nth-child(3) > :nth-child(2) > div {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+body nav > :nth-child(1) > :nth-child(3) > :nth-child(2) > div img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
+}
+body .edit > :nth-child(1) > :nth-child(2) > div {
+  -webkit-transition: 1s;
+  transition: 1s;
+  gap: 1.11rem;
+}
+
+.underline {
+  background: -webkit-gradient(linear, left top, right top, from(hsl(136, 65%, 51%)), to(hsl(192, 70%, 51%)));
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  width: 0%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.underlineN1Hover {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 875px) {
+  body nav > :nth-child(1) {
+    width: 90%;
+    padding: 1.5rem 0rem;
+  }
+  body nav > :nth-child(1) > :nth-child(2) {
+    display: none;
+  }
+  body nav > :nth-child(1) > :nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body nav > :nth-child(1) > :nth-child(3) > :nth-child(1) {
+    display: none;
+  }
+  body nav > :nth-child(1) > :nth-child(3) > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body nav > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(2) {
+    display: none;
+  }
+  body nav > :nth-child(1) > :nth-child(3) .burgerToggle > :nth-child(1) {
+    display: none;
+  }
+  body nav > :nth-child(1) > :nth-child(3) .burgerToggle > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .edit > :nth-child(1) {
+    width: 90%;
+    padding: 1.1rem 0rem;
+  }
+}
+body .overflow {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsla(233, 26%, 24%, 0.9)), to(hsla(233, 26%, 24%, 0.2)));
+  background: linear-gradient(to bottom, hsla(233, 26%, 24%, 0.9), hsla(233, 26%, 24%, 0.2));
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+body .overflow > :nth-child(1) {
+  background: hsl(0, 0%, 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  margin-top: 5rem;
+  padding: 35px 0px;
+  border-radius: 10px;
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+  opacity: 0;
+}
+body .overflow > :nth-child(1) a {
+  all: unset;
+  font-size: 17px;
+  font-weight: 500;
+  color: hsl(233, 26%, 24%);
+}
+body .overflowAction {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body .overflowAction > :nth-child(1) {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+body .editoverflow > :nth-child(1) {
+  margin-top: 4.15rem;
 }

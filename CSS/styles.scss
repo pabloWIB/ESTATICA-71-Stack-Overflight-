@@ -27,7 +27,7 @@ $White: hsl(0, 0%, 100%);
 
 // BODY NOTES : NORMALIZE IS LOCATED IN CSS / NORMALIZE.CSS -- NORMALIZCE SE ENCUENTRA EN CSS / NORMALIZE.CSS
 
-// BODY (FONT)
+// BODY (FONT)  
 
 body{
     font-family: "Public Sans", sans-serif;
@@ -260,7 +260,7 @@ body{
         width: 100%;
         height: 100%;
         background: linear-gradient(to bottom, $DarkBlue2, $DarkBlue3);
-        z-index: 1;
+        z-index: 9;
         visibility: hidden;
         opacity: 0;
         transition: 0s;
@@ -304,3 +304,73 @@ body{
 
 // OVERFLOW --
 
+// HEADER
+
+body{
+    header{
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 auto;
+        width: 100%;
+        >div{
+            height: 100vh;
+            width: 100%;
+            background: orange;
+            overflow: hidden;
+        }
+        >:nth-child(1){
+            background: $LightGrayishBlue;
+            position: relative;
+            >:nth-child(1){
+                position: absolute;
+                right: 0;
+                width: 53.7%;
+                height: 100%;
+                right: 0%;
+                background: transparent;
+                overflow: hidden;
+                >:nth-child(1){
+                    background: rgba(red, .6);
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 8;
+                }
+                >:nth-child(2){
+                    width: 100%;
+                    max-width: 350rem;
+                    transform: scale(2);
+                    z-index: 7;
+                    img{
+                        width: 100%;
+                        margin-left: 20%;
+                        margin-top: 9%;
+                    }
+                }
+            }
+            >:nth-child(2){
+                display: flex;
+                flex-flow: row nowrap;
+                background: green;
+                height: 100%;
+                width: 46.3%;
+                align-items: flex-end;
+                justify-content: flex-end;
+                >:nth-child(1){
+                    background: #7ED4E3;
+                    width: 85%;
+                    height: 100%;
+                    max-width: 720px;
+                    display: flex;
+                    flex-flow: column wrap;
+                    place-content: center;
+               }
+            }
+        }
+        >:nth-child(2){
+            background: rgb(255, 251, 0);
+        }
+    }
+}
+
+// HEADER ---

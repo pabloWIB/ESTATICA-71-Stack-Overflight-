@@ -262,7 +262,7 @@ body .overflow {
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(hsla(233, 26%, 24%, 0.9)), to(hsla(233, 26%, 24%, 0.2)));
   background: linear-gradient(to bottom, hsla(233, 26%, 24%, 0.9), hsla(233, 26%, 24%, 0.2));
-  z-index: 1;
+  z-index: 9;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: 0s;
@@ -310,4 +310,89 @@ body .overflowAction > :nth-child(1) {
 }
 body .editoverflow > :nth-child(1) {
   margin-top: 4.15rem;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+body header > div {
+  height: 100vh;
+  width: 100%;
+  background: orange;
+  overflow: hidden;
+}
+body header > :nth-child(1) {
+  background: hsl(220, 16%, 96%);
+  position: relative;
+}
+body header > :nth-child(1) > :nth-child(1) {
+  position: absolute;
+  right: 0;
+  width: 53.7%;
+  height: 100%;
+  right: 0%;
+  background: transparent;
+  overflow: hidden;
+}
+body header > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  background: rgba(255, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+}
+body header > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  width: 100%;
+  max-width: 350rem;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  z-index: 7;
+}
+body header > :nth-child(1) > :nth-child(1) > :nth-child(2) img {
+  width: 100%;
+  margin-left: 20%;
+  margin-top: 9%;
+}
+body header > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background: green;
+  height: 100%;
+  width: 46.3%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+  background: #7ED4E3;
+  width: 85%;
+  height: 100%;
+  max-width: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  place-content: center;
+}
+body header > :nth-child(2) {
+  background: rgb(255, 251, 0);
 }

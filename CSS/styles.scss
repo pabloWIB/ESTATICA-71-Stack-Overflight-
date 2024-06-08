@@ -4,8 +4,12 @@ $DarkBlue: hsl(233, 26%, 24%);
 $LimeGreen: hsl(136, 65%, 51%);
 $BrightCyan: hsl(192, 70%, 51%);
 
+// 3 COLORS DEGRADATION 
+
 $DarkBlue2: hsl(233, 26%, 24%, .9);
 $DarkBlue3: hsl(233, 26%, 24%, .2);
+
+// 3 COLORS DEGRADATION ---
 
 // 2 NEUTRAL COLORS
 
@@ -17,6 +21,45 @@ $White: hsl(0, 0%, 100%);
 // 2 NEUTRAL COLORS ---
 
 // 1 COLORS DEFIN ---
+
+// BUTTON GRADIENT 
+
+.buttonGradiente{
+    button{
+        all: unset;
+        position: relative;
+        background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+        z-index: 1;
+        padding: .9rem 1.9rem;
+        border-radius: 50px;
+        cursor: pointer;
+        color: $White;
+        font-weight: 500;
+        font-size: 17px;
+        &:hover{
+            color: $VeryLightGray;
+        }
+    }
+    button::before{
+        border-radius: 50px;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #83E3A6, #7ED4E3);
+        z-index: -1;
+        transition: opacity .3s linear;
+        opacity: 0;
+    }
+    button:hover::before{
+        opacity: .8;
+    }
+}
+
+// BUTTON GRADIENT ---
+
 
 
 // FONTS
@@ -55,7 +98,7 @@ body{
         place-content: center;
         margin: 0 auto;
         width: 100%;
-        box-shadow: 0px .1px 1.5px .1px $GrayishBlue;
+        box-shadow: 0px .1px 1.5px .1px $LightGrayishBlue;
         position: fixed;
         top: 0;
         left: 0;
@@ -119,39 +162,6 @@ body{
                 flex-flow: row wrap;
                 align-items: center;
                 justify-content: center;
-                >:nth-child(1){
-                    button{
-                        all: unset;
-                        position: relative;
-                        background: linear-gradient(to right, $LimeGreen, $BrightCyan);
-                        z-index: 1;
-                        padding: .9rem 1.9rem;
-                        border-radius: 50px;
-                        cursor: pointer;
-                        color: $White;
-                        font-weight: 500;
-                        font-size: 17px;
-                        &:hover{
-                            color: $VeryLightGray;
-                        }
-                    }
-                    button::before{
-                        border-radius: 50px;
-                        position: absolute;
-                        content: "";
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: 0;
-                        background-image: linear-gradient(to right, #83E3A6, #7ED4E3);
-                        z-index: -1;
-                        transition: opacity .3s linear;
-                        opacity: 0;
-                    }
-                    button:hover::before{
-                        opacity: .8;
-                    }
-                }
                 >:nth-child(2){
                     display: flex;
                     flex-flow: row wrap;
@@ -312,65 +322,102 @@ body{
         flex-flow: column wrap;
         margin: 0 auto;
         width: 100%;
+        position: relative;
         >div{
             height: 100vh;
             width: 100%;
-            background: orange;
             overflow: hidden;
         }
         >:nth-child(1){
-            background: $LightGrayishBlue;
+            background: $VeryLightGray;
             position: relative;
+            z-index: 6;
             >:nth-child(1){
                 position: absolute;
                 right: 0;
-                width: 53.7%;
+                width: 53%;
                 height: 100%;
                 right: 0%;
                 background: transparent;
                 overflow: hidden;
                 >:nth-child(1){
-                    background: rgba(red, .6);
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     z-index: 8;
+                    display: flex;
+                    place-content: center;
+                    align-items: center;
+                    >:nth-child(1){
+                        height: 135%;
+                        width: 100%;
+                        >:nth-child(1){
+                            background-image: url('../IMG/image-mockups.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            height: 100%;
+                            width: 100%;
+                            transform: translateX(22.5%) translateY(13%) scale(1.1);
+                        }
+                    }
                 }
                 >:nth-child(2){
                     width: 100%;
-                    max-width: 350rem;
-                    transform: scale(2);
+                    height: 100%;
                     z-index: 7;
-                    img{
+                    >:nth-child(1){
+                        background-image: url('../IMG/bg-intro-desktop.svg') ;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 100%;
                         width: 100%;
-                        margin-left: 20%;
-                        margin-top: 9%;
+                        transform: translateX(23%) translateY(5%) scale(1.65);
                     }
                 }
             }
             >:nth-child(2){
                 display: flex;
                 flex-flow: row nowrap;
-                background: green;
                 height: 100%;
-                width: 46.3%;
+                width: 47%;
                 align-items: flex-end;
                 justify-content: flex-end;
                 >:nth-child(1){
-                    background: #7ED4E3;
-                    width: 85%;
+                    width: 84%;
                     height: 100%;
-                    max-width: 720px;
+                    max-width: 620px;
                     display: flex;
                     flex-flow: column wrap;
-                    place-content: center;
-               }
+                    justify-content: center;
+                    align-items: center;
+                    align-items: flex-start;
+                    gap: 1.75rem;
+                    margin-bottom: -5.2%;
+                    >:nth-child(1){
+                        width: 80%;
+                        h1{
+                            all: unset;
+                            font-size: 2.85rem;
+                            color: $DarkBlue;
+                        }
+                    }
+                    >:nth-child(2){
+                        display: flex;
+                        flex-flow: column wrap;
+                        width: 83%;
+                        p{
+                            all: unset;
+                            font-size: 17px;
+                            line-height: 1.85rem;
+                            color: $GrayishBlue;
+                        }
+                    }
+                }
             }
         }
         >:nth-child(2){
-            background: rgb(255, 251, 0);
+            background: rgba(red, 0.1);
+            z-index: 5;
         }
     }
 }
-
-// HEADER ---

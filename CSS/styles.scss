@@ -60,8 +60,6 @@ $White: hsl(0, 0%, 100%);
 
 // BUTTON GRADIENT ---
 
-
-
 // FONTS
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -212,7 +210,7 @@ body{
 
 // 0 NAV ---
 
-// NAV MEDIAS (875px) TABLET
+// NAV MEDIAS (875px) TABLET / PHONE
 
 @media(max-width:875px){
     body{
@@ -259,7 +257,7 @@ body{
     }
 }
 
-// NAV MEDIAS (850px) TABLET ---
+// NAV MEDIAS (875px) TABLET / PHONE ---
 
 // OVERFLOW
 
@@ -314,7 +312,43 @@ body{
 
 // OVERFLOW --
 
-// HEADER
+// 1 HEADER
+
+// 2 headerIDAnimation 
+
+.headerIDAnimation{
+    >:nth-child(1){
+        >:nth-child(1){
+            >:nth-child(1){
+                >:nth-child(1){
+                    >:nth-child(1){
+                        >:nth-child(1){
+                            transform: translateX(22.5%) translateY(9%) scale(1);
+                            opacity: 100%;
+                            transition: .75s;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    >:nth-child(1){
+                        transform: translateX(23%) translateY(5%) scale(1.65);
+                        opacity: 100%;
+                        transition: .75s;
+                    }
+                }
+            }
+            >:nth-child(2){
+                >:nth-child(1){
+                    transform: translateY(0%);
+                    opacity: 100%;
+                    transition: .75s;
+                }
+            }
+        }
+    }
+}
+
+// 2 headerIDAnimation ---
 
 body{
     header{
@@ -322,102 +356,273 @@ body{
         flex-flow: column wrap;
         margin: 0 auto;
         width: 100%;
-        position: relative;
-        >div{
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
-        }
+        overflow: hidden;
         >:nth-child(1){
-            background: $VeryLightGray;
             position: relative;
-            z-index: 6;
+            height: 200vh;
+            >div{
+                height: 100vh;
+                width: 100%;
+            }
             >:nth-child(1){
+                background: $VeryLightGray;
                 position: absolute;
-                right: 0;
-                width: 53%;
-                height: 100%;
-                right: 0%;
-                background: transparent;
-                overflow: hidden;
+                z-index: 6;
                 >:nth-child(1){
                     position: absolute;
-                    width: 100%;
+                    right: 0;
+                    width: 53%;
                     height: 100%;
-                    z-index: 8;
-                    display: flex;
-                    place-content: center;
-                    align-items: center;
+                    right: 0%;
+                    background: transparent;
                     >:nth-child(1){
-                        height: 135%;
+                        position: absolute;
                         width: 100%;
+                        height: 100%;
+                        z-index: 8;
+                        display: flex;
+                        place-content: center;
+                        align-items: center;
                         >:nth-child(1){
-                            background-image: url('../IMG/image-mockups.png');
+                            height: 140%;
+                            width: 100%;
+                            >:nth-child(1){
+                                background-image: url('../IMG/image-mockups.png');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                height: 100%;
+                                width: 100%;
+                                transform: translateX(97.5%) translateY(9%) scale(1);
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        width: 100%;
+                        height: 100%;
+                        z-index: 7;
+                        overflow: hidden;
+                        >:nth-child(1){
+                            background-image: url('../IMG/bg-intro-desktop.svg');
                             background-repeat: no-repeat;
                             background-size: cover;
                             height: 100%;
                             width: 100%;
-                            transform: translateX(22.5%) translateY(13%) scale(1.1);
+                            transform: translateX(115%) translateY(5%) scale(1.65);
+                            opacity: 0;
                         }
                     }
                 }
                 >:nth-child(2){
-                    width: 100%;
-                    height: 100%;
-                    z-index: 7;
-                    >:nth-child(1){
-                        background-image: url('../IMG/bg-intro-desktop.svg') ;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        height: 100%;
-                        width: 100%;
-                        transform: translateX(23%) translateY(5%) scale(1.65);
-                    }
-                }
-            }
-            >:nth-child(2){
-                display: flex;
-                flex-flow: row nowrap;
-                height: 100%;
-                width: 47%;
-                align-items: flex-end;
-                justify-content: flex-end;
-                >:nth-child(1){
-                    width: 84%;
-                    height: 100%;
-                    max-width: 620px;
                     display: flex;
-                    flex-flow: column wrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-items: flex-start;
-                    gap: 1.75rem;
-                    margin-bottom: -5.2%;
+                    flex-flow: row nowrap;
+                    height: 100%;
+                    width: 47%;
+                    align-items: flex-end;
+                    justify-content: flex-end;
                     >:nth-child(1){
-                        width: 80%;
-                        h1{
-                            all: unset;
-                            font-size: 2.85rem;
-                            color: $DarkBlue;
-                        }
-                    }
-                    >:nth-child(2){
+                        width: 84%;
+                        height: 100%;
+                        max-width: 620px;
                         display: flex;
                         flex-flow: column wrap;
-                        width: 83%;
-                        p{
-                            all: unset;
-                            font-size: 17px;
-                            line-height: 1.85rem;
-                            color: $GrayishBlue;
+                        justify-content: center;
+                        align-items: center;
+                        align-items: flex-start;
+                        gap: 1.75rem;
+                        margin-bottom: -5.2%;
+                        transform: translateY(69%);
+                        opacity: 0;
+                        >:nth-child(1){
+                            width: 80%;
+                            h1{
+                                all: unset;
+                                font-size: 2.85rem;
+                                color: $DarkBlue;
+                            }
+                        }
+                        >:nth-child(2){
+                            display: flex;
+                            flex-flow: column wrap;
+                            width: 83%;
+                            p{
+                                all: unset;
+                                font-size: 17px;
+                                line-height: 1.85rem;
+                                color: $GrayishBlue;
+                            }
                         }
                     }
                 }
+                >:nth-child(3){
+                    display: none;
+                }
             }
-        }
-        >:nth-child(2){
-            background: rgba(red, 0.1);
-            z-index: 5;
         }
     }
 }
+
+// 1 HEADER TOP ---
+
+// HEADER MEDIAS (1024px) ORGANICE RIGHT SIDE 
+
+@media(max-width: 1024px){
+    body{
+        header{
+            >:nth-child(1){
+                >:nth-child(1){
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            gap: .25rem;
+                            >:nth-child(1), >:nth-child(2){
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// HEADER MEDIAS (1024px) ORGANICE RIGHT SIDE  ---
+
+// HEADER MEDIAS (875px) TABLET / PHONE
+
+@media(max-width: 875px){
+    body{
+        header{
+            display: flex;
+            flex-flow: column wrap;
+            margin: 0 auto;
+            width: 100%;
+            overflow: hidden;
+            >:nth-child(1){
+                position: relative;
+                height: 200vh;
+                >div{
+                    height: 100vh;
+                    width: 100%;
+                }
+                >:nth-child(1){
+                    background: $VeryLightGray;
+                    position: normal;
+                    z-index: 6;
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-between;
+                    >:nth-child(1){
+                        display: none;
+                    }
+                    >:nth-child(2){
+                        height: 45%;
+                        width: 100%;
+                        order: 2;
+                        >:nth-child(1){
+                            margin: 0 auto;
+                            width: 90%;
+                            height: 100%;
+                            max-width: 1440px;
+                            display: flex;
+                            flex-flow: column wrap;
+                            justify-content: center;
+                            align-items: center;
+                            align-items: flex-start;
+                            gap: 1.75rem;
+                            transform: translateY(69%);
+                            opacity: 0;
+                            text-align: center;
+                            >:nth-child(1){
+                                h1{
+                                    all: unset;
+                                    font-size: 2.35rem;
+                                    color: $DarkBlue;
+                                }
+                            }
+                            >:nth-child(2){
+                                p{
+                                    all: unset;
+                                    font-size: 14px;
+                                    line-height: 1.5rem;
+                                    color: $GrayishBlue;
+                                }
+                            }
+                            >:nth-child(3){
+                                width: 100%;
+                            }
+                        }
+                    }
+                    >:nth-child(3){
+                        display: flex;
+                        order: 1;
+                        background-image: url('../IMG/bg-intro-mobile.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 100%;
+                        height: 55%;
+                        position: relative;
+                        place-content: center;
+                        align-items: center;
+                        transform: translateX(100%);
+                        opacity: 0;
+                        overflow: hidden;
+                        >:nth-child(1){
+                            position: absolute;
+                            width: 90%;
+                            height: 100%;
+                            display: flex;
+                            place-content: center;
+                            align-items: center;
+                            transform: translateY(-7.5%);
+                            img{
+                                width: 100%;
+                                max-width: 24rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 875px){
+    .headerIDAnimation{
+        >:nth-child(1){
+            >:nth-child(1){
+                >:nth-child(2){
+                    >:nth-child(1){
+                        transform: translateY(0%);
+                        opacity: 100%;
+                        transition: .75s;
+                    }
+                }
+                >:nth-child(3){
+                    transform: translateX(0%);
+                    opacity: 100%;
+                    transition: .75s;
+                }
+            }
+        }
+    }
+}
+
+// HEADER MEDIAS (875px) TABLET / PHONE ---
+
+
+// HEADER BOTTOM 
+
+body{
+    header{
+        >:nth-child(1){
+            >:nth-child(2){
+                z-index: 5;
+                position: absolute;
+                bottom: 0;
+                background: rgb(200, 175, 175);
+            }
+        }
+    }
+}
+
+// HEADER BOTTOM ---

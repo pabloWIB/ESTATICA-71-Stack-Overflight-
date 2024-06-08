@@ -5,6 +5,12 @@ $(function(){
 });
 
 $(function(){
+    setTimeout(function(){
+        $("#headerID").addClass("headerIDAnimation");
+    }, 1000);
+});
+
+$(function(){
 	$("#hoverStateN1").hover(function(e){
 		$("#underlineN1").toggleClass("underlineN1Hover");
 	});

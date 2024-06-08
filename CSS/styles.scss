@@ -371,7 +371,6 @@ body{
 
 // OVERFLOW MEDIAS (875px) TABLET / PHONE --
 
-
 // 1 HEADER
 
 // 2 headerIDAnimation 
@@ -383,7 +382,7 @@ body{
                 >:nth-child(1){
                     >:nth-child(1){
                         >:nth-child(1){
-                            transform: translateX(22.5%) translateY(9%) scale(1);
+                            transform: translateX(22.5%) translateY(5%) scale(.85);
                             opacity: 100%;
                             transition: .75s;
                         }
@@ -687,6 +686,7 @@ body{
                 display: flex;
                 place-content: center;
                 align-items: center;
+                flex-flow: row nowrap;
                 >:nth-child(1){
                     margin: 0 auto;
                     height: 90%;
@@ -697,7 +697,7 @@ body{
                     place-content: center;
                     align-items: center;
                     justify-content: center;
-                    gap: 4rem;
+                    gap: 5rem;
                     >:nth-child(1){
                         width: 100%;
                         display: flex;
@@ -720,17 +720,39 @@ body{
                         }
                     }
                     >:nth-child(2){
-                        background: red;
                         width: 100%;
                         display: flex;
                         flex-flow: row wrap;
-                        align-items: center;
+                        align-items: flex-start;
                         justify-content: space-between;
                         >div{
-                            background: peru;
-                            width: 25%;
+                            width: 23%;
                             display: flex;
                             flex-flow: column wrap;
+                            gap: 1.75rem;
+                            >:nth-child(1){
+                                >:nth-child(1){
+                                    width: 100%;
+                                    max-width: 3.95rem;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                h3{
+                                    all: unset;
+                                    font-size: 1.35rem;
+                                    color: $DarkBlue;
+                                }
+                            }
+                            >:nth-child(3){
+                                p{
+                                    all: unset;
+                                    font-size: 17px;
+                                    color: $GrayishBlue;
+                                }
+                            }
                         }
                     }
                 }
@@ -743,7 +765,7 @@ body{
 
 // HEADER BOTTOM MEDIAS (875px) TABLET / PHONE 
 
-@media(max-width: 875px){
+@media(max-width: 1224px){
     body{
         header{
             >:nth-child(1){
@@ -756,6 +778,7 @@ body{
                     display: flex;
                     place-content: center;
                     align-items: center;
+                    height: auto;
                     height: 200vh;
                     >:nth-child(1){
                         margin: 0 auto;
@@ -767,22 +790,23 @@ body{
                         place-content: center;
                         align-items: center;
                         justify-content: center;
-                        gap: 4rem;
+                        gap: 2rem;
                         >:nth-child(1){
                             width: 100%;
                             display: flex;
                             flex-flow: column wrap;
-                            gap: 1.25rem;
+                            gap: 2.25rem;
+                            text-align: center;
                             h2{
                                 all: unset;
-                                font-size: 2.35rem;
+                                font-size: 2.15rem;
                                 color: $DarkBlue;
                             }
                             div{
-                                width: 60%;
+                                width: 100%;
                                 p{
                                     all: unset;
-                                    font-size: 17px;
+                                    font-size: 16px;
                                     color: $GrayishBlue;
                                     font-weight: 500;
                                     line-height: 1.5rem;
@@ -790,21 +814,32 @@ body{
                             }
                         }
                         >:nth-child(2){
-                            background: red;
                             width: 100%;
                             display: flex;
                             flex-flow: column nowrap;
                             align-items: center;
                             justify-content: center;
-                            gap: 2rem;
+                            gap: 3.5rem;
                             >div{
-                                background: rgb(243, 231, 219);
                                 width: 100%;
                                 display: flex;
                                 flex-flow: column wrap;
                                 align-items: center;
                                 justify-content: center;
                                 text-align: justify;
+                                >:nth-child(1){
+                                    >:nth-child(1){
+                                        width: 100%;
+                                        max-width: 3.5rem;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                >:nth-child(3){
+                                    width: 75%;
+                                    text-align: center;
+                                }
                             }
                         }
                     }

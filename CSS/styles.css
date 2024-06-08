@@ -268,6 +268,7 @@ body .overflow {
   opacity: 0;
   -webkit-transition: 0s;
   transition: 0s;
+  display: none;
 }
 body .overflow > :nth-child(1) {
   background: hsl(0, 0%, 100%);
@@ -297,6 +298,7 @@ body .overflow > :nth-child(1) a {
   font-size: 17px;
   font-weight: 500;
   color: hsl(233, 26%, 24%);
+  cursor: pointer;
 }
 body .overflowAction {
   visibility: visible;
@@ -313,6 +315,66 @@ body .editoverflow > :nth-child(1) {
   margin-top: 4.15rem;
 }
 
+@media (max-width: 875px) {
+  body .overflow {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(hsla(233, 26%, 24%, 0.9)), to(hsla(233, 26%, 24%, 0.2)));
+    background: linear-gradient(to bottom, hsla(233, 26%, 24%, 0.9), hsla(233, 26%, 24%, 0.2));
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0s;
+    transition: 0s;
+    display: block;
+  }
+  body .overflow > :nth-child(1) {
+    background: hsl(0, 0%, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.5rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    margin-top: 5rem;
+    padding: 35px 0px;
+    border-radius: 10px;
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+    opacity: 0;
+  }
+  body .overflow > :nth-child(1) a {
+    all: unset;
+    font-size: 17px;
+    font-weight: 500;
+    color: hsl(233, 26%, 24%);
+    cursor: pointer;
+  }
+  body .overflowAction {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  body .overflowAction > :nth-child(1) {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+  body .editoverflow > :nth-child(1) {
+    margin-top: 4.15rem;
+  }
+}
 .headerIDAnimation > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
   -webkit-transform: translateX(22.5%) translateY(9%) scale(1);
           transform: translateX(22.5%) translateY(9%) scale(1);
@@ -638,5 +700,190 @@ body header > :nth-child(1) > :nth-child(2) {
   z-index: 5;
   position: absolute;
   bottom: 0;
-  background: rgb(200, 175, 175);
+  background: hsl(220, 16%, 96%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+  margin: 0 auto;
+  height: 90%;
+  width: 85%;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1.25rem;
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
+  all: unset;
+  font-size: 2.35rem;
+  color: hsl(233, 26%, 24%);
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div {
+  width: 60%;
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div p {
+  all: unset;
+  font-size: 17px;
+  color: hsl(233, 8%, 62%);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) {
+  background: red;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div {
+  background: peru;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+@media (max-width: 875px) {
+  body header > :nth-child(1) {
+    height: 300vh;
+  }
+  body header > :nth-child(1) > :nth-child(2) {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    background: hsl(220, 16%, 96%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200vh;
+  }
+  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+    height: 90%;
+    width: 85%;
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 4rem;
+  }
+  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 1.25rem;
+  }
+  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
+    all: unset;
+    font-size: 2.35rem;
+    color: hsl(233, 26%, 24%);
+  }
+  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div {
+    width: 60%;
+  }
+  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div p {
+    all: unset;
+    font-size: 17px;
+    color: hsl(233, 8%, 62%);
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) {
+    background: red;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+  }
+  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div {
+    background: rgb(243, 231, 219);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: justify;
+  }
 }

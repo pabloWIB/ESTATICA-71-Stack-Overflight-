@@ -411,16 +411,14 @@ body header {
 }
 body header > :nth-child(1) {
   position: relative;
-  height: 200vh;
-}
-body header > :nth-child(1) > div {
-  height: 100vh;
-  width: 100%;
+  height: 112vh;
 }
 body header > :nth-child(1) > :nth-child(1) {
   background: hsl(0, 0%, 98%);
   position: absolute;
   z-index: 6;
+  height: 100vh;
+  width: 100%;
 }
 body header > :nth-child(1) > :nth-child(1) > :nth-child(1) {
   position: absolute;
@@ -567,11 +565,7 @@ body header > :nth-child(1) > :nth-child(1) > :nth-child(3) {
   }
   body header > :nth-child(1) {
     position: relative;
-    height: 200vh;
-  }
-  body header > :nth-child(1) > div {
-    height: 100vh;
-    width: 100%;
+    height: 112vh;
   }
   body header > :nth-child(1) > :nth-child(1) {
     background: hsl(0, 0%, 98%);
@@ -587,6 +581,8 @@ body header > :nth-child(1) > :nth-child(1) > :nth-child(3) {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 100vh;
+    width: 100%;
   }
   body header > :nth-child(1) > :nth-child(1) > :nth-child(1) {
     display: none;
@@ -696,10 +692,10 @@ body header > :nth-child(1) > :nth-child(1) > :nth-child(3) {
     transition: 0.75s;
   }
 }
-body header > :nth-child(1) > :nth-child(2) {
-  z-index: 5;
-  position: absolute;
-  bottom: 0;
+body main {
+  margin-top: -14.2vh;
+}
+body main > :nth-child(1) {
   background: hsl(220, 16%, 96%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,10 +708,10 @@ body header > :nth-child(1) > :nth-child(2) {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  padding: 12vh 0vh;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+body main > :nth-child(1) > :nth-child(1) {
   margin: 0 auto;
-  height: 90%;
   width: 85%;
   max-width: 1440px;
   display: -webkit-box;
@@ -734,7 +730,7 @@ body header > :nth-child(1) > :nth-child(2) > :nth-child(1) {
           justify-content: center;
   gap: 5rem;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(1) {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -745,22 +741,22 @@ body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) {
           flex-flow: column wrap;
   gap: 1.25rem;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(1) h2 {
   all: unset;
   font-size: 2.35rem;
   color: hsl(233, 26%, 24%);
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(1) div {
   width: 60%;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div p {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(1) div p {
   all: unset;
   font-size: 17px;
   color: hsl(233, 8%, 62%);
   font-weight: 500;
   line-height: 1.5rem;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(2) {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,7 +772,7 @@ body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
   width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,35 +783,341 @@ body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > di
           flex-flow: column wrap;
   gap: 1.75rem;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) {
   width: 100%;
   max-width: 3.95rem;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) img {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) img {
   width: 100%;
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) h3 {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) h3 {
   all: unset;
   font-size: 1.35rem;
   color: hsl(233, 26%, 24%);
 }
-body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div > :nth-child(3) p {
+body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(3) p {
   all: unset;
   font-size: 17px;
   color: hsl(233, 8%, 62%);
 }
 
-@media (max-width: 1224px) {
-  body header > :nth-child(1) {
-    height: 112vh;
-    background: rgba(255, 0, 0, 0.4);
+.firstAnimation {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.animationN1 {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@media (max-width: 875px) {
+  body main {
+    margin-top: -14.2vh;
   }
-  body header > :nth-child(1) > :nth-child(2) {
-    display: none;
+  body main > :nth-child(1) {
+    background: hsl(220, 16%, 96%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding: 9vh 0vh;
+  }
+  body main > :nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3.5rem;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 1.25rem;
+    text-align: center;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(1) h2 {
+    all: unset;
+    font-size: 2.35rem;
+    color: hsl(233, 26%, 24%);
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(1) div {
+    width: 100%;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(1) div p {
+    all: unset;
+    font-size: 17px;
+    color: hsl(233, 8%, 62%);
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.75rem;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) {
+    width: 100%;
+    max-width: 4.25rem;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) img {
+    width: 100%;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) h3 {
+    all: unset;
+    font-size: 1.35rem;
+    color: hsl(233, 26%, 24%);
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(3) {
+    text-align: center;
+  }
+  body main > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(3) p {
+    all: unset;
+    font-size: 17px;
+    color: hsl(233, 8%, 62%);
   }
 }
-body main {
+body article > :nth-child(1) {
+  background: hsl(0, 0%, 98%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 12vh 0vh;
+}
+body article > :nth-child(1) > :nth-child(1) {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1.25rem;
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(1) h2 {
+  all: unset;
+  font-size: 2.35rem;
+  color: hsl(233, 26%, 24%);
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1.75rem;
   background: orange;
-  margin-top: -14.2vh;
-  z-index: 20;
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  max-width: 3.95rem;
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) h3 {
+  all: unset;
+  font-size: 1.35rem;
+  color: hsl(233, 26%, 24%);
+}
+body article > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(3) p {
+  all: unset;
+  font-size: 17px;
+  color: hsl(233, 8%, 62%);
+}
+
+@media (max-width: 875px) {
+  body article > :nth-child(1) {
+    background: hsl(0, 0%, 98%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding: 12vh 0vh;
+  }
+  body article > :nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3.5rem;
+  }
+  body article > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 1.25rem;
+    text-align: center;
+  }
+  body article > :nth-child(1) > :nth-child(1) > :nth-child(1) h2 {
+    all: unset;
+    font-size: 2.35rem;
+    color: hsl(233, 26%, 24%);
+  }
+  body article > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+  }
+  body article > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0rem;
+  }
 }

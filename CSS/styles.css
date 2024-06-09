@@ -807,114 +807,15 @@ body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > di
 
 @media (max-width: 1224px) {
   body header > :nth-child(1) {
-    height: 300vh;
+    height: 112vh;
+    background: rgba(255, 0, 0, 0.4);
   }
   body header > :nth-child(1) > :nth-child(2) {
-    z-index: 5;
-    position: absolute;
-    bottom: 0;
-    background: hsl(220, 16%, 96%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    place-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-    height: 200vh;
+    display: none;
   }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) {
-    margin: 0 auto;
-    height: 90%;
-    width: 85%;
-    max-width: 1440px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    place-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 2rem;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    gap: 2.25rem;
-    text-align: center;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
-    all: unset;
-    font-size: 2.15rem;
-    color: hsl(233, 26%, 24%);
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div {
-    width: 100%;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) div p {
-    all: unset;
-    font-size: 16px;
-    color: hsl(233, 8%, 62%);
-    font-weight: 500;
-    line-height: 1.5rem;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 3.5rem;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: justify;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) {
-    width: 100%;
-    max-width: 3.5rem;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) > :nth-child(1) img {
-    width: 100%;
-  }
-  body header > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(2) > div > :nth-child(3) {
-    width: 75%;
-    text-align: center;
-  }
+}
+body main {
+  background: orange;
+  margin-top: -14.2vh;
+  z-index: 20;
 }

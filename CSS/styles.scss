@@ -763,93 +763,34 @@ body{
 
 // HEADER BOTTOM ---
 
-// HEADER BOTTOM MEDIAS (875px) TABLET / PHONE 
+// HEADER BOTTOM MEDIAS (1224px) TABLET / PHONE 
 
 @media(max-width: 1224px){
     body{
         header{
             >:nth-child(1){
-                height: 300vh;
+                height: 112vh;
+                background: rgba(red, .4);
                 >:nth-child(2){
-                    z-index: 5;
-                    position: absolute;
-                    bottom: 0;
-                    background: $LightGrayishBlue;
-                    display: flex;
-                    place-content: center;
-                    align-items: center;
-                    height: auto;
-                    height: 200vh;
-                    >:nth-child(1){
-                        margin: 0 auto;
-                        height: 90%;
-                        width: 85%;
-                        max-width: 1440px;
-                        display: flex;
-                        flex-flow: column wrap;
-                        place-content: center;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 2rem;
-                        >:nth-child(1){
-                            width: 100%;
-                            display: flex;
-                            flex-flow: column wrap;
-                            gap: 2.25rem;
-                            text-align: center;
-                            h2{
-                                all: unset;
-                                font-size: 2.15rem;
-                                color: $DarkBlue;
-                            }
-                            div{
-                                width: 100%;
-                                p{
-                                    all: unset;
-                                    font-size: 16px;
-                                    color: $GrayishBlue;
-                                    font-weight: 500;
-                                    line-height: 1.5rem;
-                                }
-                            }
-                        }
-                        >:nth-child(2){
-                            width: 100%;
-                            display: flex;
-                            flex-flow: column nowrap;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 3.5rem;
-                            >div{
-                                width: 100%;
-                                display: flex;
-                                flex-flow: column wrap;
-                                align-items: center;
-                                justify-content: center;
-                                text-align: justify;
-                                >:nth-child(1){
-                                    >:nth-child(1){
-                                        width: 100%;
-                                        max-width: 3.5rem;
-                                        img{
-                                            width: 100%;
-                                        }
-                                    }
-                                }
-                                >:nth-child(3){
-                                    width: 75%;
-                                    text-align: center;
-                                }
-                            }
-                        }
-                    }
+                    display: none;
                 }
             }
         }
     }
 }
 
-// HEADER BOTTOM MEDIAS (875px) TABLET / PHONE ---
+// HEADER BOTTOM MEDIAS (1224px) TABLET / PHONE ---
 
+// MAIN
+
+body{
+    main{
+        background: orange;
+        margin-top: -14.2vh;
+        z-index: 20;
+    }
+}
+
+// MAIN ---
 
 

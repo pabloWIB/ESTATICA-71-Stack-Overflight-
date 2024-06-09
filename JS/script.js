@@ -132,10 +132,14 @@ function toggleAnimationN2() {
     } 
 }
 
-window.addEventListener("scroll", toggleAnimationN2);
-window.addEventListener("resize", toggleAnimationN2);
+function delayedToggleAnimationN2() {
+    setTimeout(toggleAnimationN2, 200); 
+}
 
-toggleAnimationN2();
+window.addEventListener("scroll", delayedToggleAnimationN2);
+window.addEventListener("resize", delayedToggleAnimationN2);
+
+delayedToggleAnimationN2(); 
 
 // VIEWPORT ANIMATIONS 2 ---
 
@@ -148,10 +152,14 @@ function toggleAnimationN3() {
     } 
 }
 
-window.addEventListener("scroll", toggleAnimationN3);
-window.addEventListener("resize", toggleAnimationN3);
+function delayedToggleAnimationN3() {
+    setTimeout(toggleAnimationN3, 250); 
+}
 
-toggleAnimationN3();
+window.addEventListener("scroll", delayedToggleAnimationN3);
+window.addEventListener("resize", delayedToggleAnimationN3);
+
+delayedToggleAnimationN3(); 
 
 // VIEWPORT ANIMATIONS 3 ---
 
@@ -164,10 +172,14 @@ function toggleAnimationN4() {
     } 
 }
 
-window.addEventListener("scroll", toggleAnimationN4);
-window.addEventListener("resize", toggleAnimationN4);
+function delayedToggleAnimationN4() {
+    setTimeout(toggleAnimationN4, 300); 
+}
 
-toggleAnimationN4();
+window.addEventListener("scroll", delayedToggleAnimationN4);
+window.addEventListener("resize", delayedToggleAnimationN4);
+
+delayedToggleAnimationN4(); 
 
 // VIEWPORT ANIMATIONS 4 ---
 
@@ -180,10 +192,14 @@ function toggleAnimationN5() {
     } 
 }
 
-window.addEventListener("scroll", toggleAnimationN5);
-window.addEventListener("resize", toggleAnimationN5);
+function delayedToggleAnimationN5() {
+    setTimeout(toggleAnimationN5, 350);
+}
 
-toggleAnimationN5();
+window.addEventListener("scroll", delayedToggleAnimationN5);
+window.addEventListener("resize", delayedToggleAnimationN5);
+
+delayedToggleAnimationN5(); 
 
 // VIEWPORT ANIMATIONS 5 ---
 
@@ -195,6 +211,8 @@ const mainID2 = document.getElementById('mainID2');
 const mainID3 = document.getElementById('mainID3');
 const mainID4 = document.getElementById('mainID4');
 const mainID5 = document.getElementById('mainID5');
+
+
     
 function scrollValue3() {
     var scroll = window.scrollY;

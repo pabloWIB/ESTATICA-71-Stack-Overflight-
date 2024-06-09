@@ -2,6 +2,13 @@
 
 $DarkBlue: hsl(233, 26%, 24%);
 $LimeGreen: hsl(136, 65%, 51%);
+
+// 0 NEW COLORS DARKEN
+
+$DarkLimaGreen: #4bc095;
+
+// 0 NEW COLORS DARKEN --
+
 $BrightCyan: hsl(192, 70%, 51%);
 
 // 3 COLORS DEGRADATION 
@@ -884,7 +891,7 @@ body{
                 place-content: center;
                 align-items: center;
                 justify-content: center;
-                gap: 5rem;
+                gap: 2.5rem;
                 >:nth-child(1){
                     width: 100%;
                     display: flex;
@@ -906,29 +913,93 @@ body{
                         width: 23%;
                         display: flex;
                         flex-flow: column wrap;
-                        gap: 1.75rem;
-                        background: orange;
+                        background: $White;
+                        box-shadow: 0px 0px 1.5px 1px $LightGrayishBlue;
+                        justify-content: center;
+                        border-radius: 7.5px;
                         >:nth-child(1){
+                            width: 100%;
+                            height: 180px;
+                            border-radius: 7.5px 7.5px 0px 0px;
+                            overflow: hidden;
                             >:nth-child(1){
+                                height: 100%;
                                 width: 100%;
-                                max-width: 3.95rem;
-                                img{
-                                    width: 100%;
+                                &:hover{
+                                    transform: scale(1.1);
                                 }
                             }
                         }
                         >:nth-child(2){
-                            h3{
-                                all: unset;
-                                font-size: 1.35rem;
-                                color: $DarkBlue;
+                            width: 100%;
+                            display: flex;
+                            place-content: center;
+                            align-items: center;
+                            >div{
+                                padding: 25px 0px;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                flex-flow: column wrap;
+                                gap: .75rem;
+                                h6, h4, p{
+                                    all: unset;
+                                }
+                                h6, p{
+                                    color: $GrayishBlue;
+                                }
+                                h4{
+                                    color: $DarkBlue;
+                                    font-size: 18px;
+                                    transition: .2s;
+                                    cursor: pointer;
+                                    &:hover{
+                                        color: $DarkLimaGreen;
+                                        transition: .2s;
+                                    }
+                                }
+                                h6{
+                                    font-size: 13px;
+                                }
+                                p{
+                                    font-size: 15px;
+                                }
                             }
                         }
-                        >:nth-child(3){
-                            p{
-                                all: unset;
-                                font-size: 17px;
-                                color: $GrayishBlue;
+                    }
+                    >:nth-child(1){
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                background: url('../IMG/image-currency.jpg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                background: url('../IMG/image-restaurant.jpg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    >:nth-child(3){
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                background: url('../IMG/image-plane.jpg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    >:nth-child(4){
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                background: url('../IMG/image-confetti.jpg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
                             }
                         }
                     }
@@ -940,8 +1011,7 @@ body{
 
 // ARTICLE ---
 
-
-// MAIN MEDIAS (875px) TABLET / PHONE 
+// ARTICLE MEDIAS (875px) TABLET / PHONE 
 
 @media(max-width: 875px){
     body{
@@ -996,4 +1066,5 @@ body{
     }
 }
 
-// MAIN MEDIAS (875px) TABLET / PHONE ---
+// ARTICLE MEDIAS (875px) TABLET / PHONE ---
+

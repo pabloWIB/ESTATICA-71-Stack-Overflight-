@@ -1,8 +1,5 @@
 ![image](https://github.com/pabloWIB/ESTATICA-71-Stack-Overflight-/assets/116923433/109b6dca-21b5-4d12-850e-596de16093ed)
 
-![image](https://github.com/pabloWIB/ESTATICA-71-Stack-Overflight-/assets/116923433/0e04628e-c836-4f27-9f2f-6f387f4ac9a1)
-
-
 
 <h1>Easy Bank Frontend Project</h1>
 

@@ -3,13 +3,13 @@
 $(function(){
     setTimeout(function(){
         $("#navigationID").addClass("navigationIDAnimation");
-    }, 700);
+    }, 350);
 });
 
 $(function(){
     setTimeout(function(){
         $("#headerID").addClass("headerIDAnimation");
-    }, 1000);
+    }, 500);
 });
 
 // LOAD ANIMATIONS ---
@@ -204,6 +204,115 @@ delayedToggleAnimationN5();
 // VIEWPORT ANIMATIONS 5 ---
 
 
+// VIEWPORT ANIMATIONS 6
+
+function toggleAnimationN6() {
+    var targetSection = document.getElementById("articleID1");
+    if (isElementInViewport(targetSection)) {
+        targetSection.classList.add('animationN1');
+    } 
+}
+
+function delayedToggleAnimationN6() {
+    setTimeout(toggleAnimationN6, 200);
+}
+
+window.addEventListener("scroll", delayedToggleAnimationN6);
+window.addEventListener("resize", delayedToggleAnimationN6);
+
+delayedToggleAnimationN6(); 
+
+// VIEWPORT ANIMATIONS 6 ---
+
+
+// VIEWPORT ANIMATIONS 7
+
+function toggleAnimationN7() {
+    var targetSection = document.getElementById("articleID2");
+    var articleID2attach = document.getElementById('articleID2attach');
+    if (isElementInViewport(targetSection)) {
+        articleID2attach.classList.add('animationN1');
+    } 
+}
+
+function delayedToggleAnimationN7() {
+    setTimeout(toggleAnimationN7, 700);
+}
+
+window.addEventListener("scroll", delayedToggleAnimationN7);
+window.addEventListener("resize", delayedToggleAnimationN7);
+
+delayedToggleAnimationN7(); 
+
+// VIEWPORT ANIMATIONS 7 ---
+
+
+// VIEWPORT ANIMATIONS 8
+
+function toggleAnimationN8() {
+    var targetSection = document.getElementById("articleID3");
+    var articleID3attach = document.getElementById('articleID3attach');
+    if (isElementInViewport(targetSection)) {
+        articleID3attach.classList.add('animationN1');
+    } 
+}
+
+function delayedToggleAnimationN8() {
+    setTimeout(toggleAnimationN8, 800);
+}
+
+window.addEventListener("scroll", delayedToggleAnimationN8);
+window.addEventListener("resize", delayedToggleAnimationN8);
+
+delayedToggleAnimationN8(); 
+
+// VIEWPORT ANIMATIONS 8 ---
+
+// VIEWPORT ANIMATIONS 9
+
+function toggleAnimationN9() {
+    var targetSection = document.getElementById("articleID4");
+    var articleID4attach = document.getElementById('articleID4attach');
+    if (isElementInViewport(targetSection)) {
+        articleID4attach.classList.add('animationN1');
+    } 
+}
+
+function delayedToggleAnimationN9() {
+    setTimeout(toggleAnimationN9, 900);
+}
+
+window.addEventListener("scroll", delayedToggleAnimationN9);
+window.addEventListener("resize", delayedToggleAnimationN9);
+
+delayedToggleAnimationN9(); 
+
+// VIEWPORT ANIMATIONS 9 ---
+
+// VIEWPORT ANIMATIONS 10
+
+function toggleAnimationN10() {
+    var targetSection = document.getElementById("articleID5");
+    var articleID5attach = document.getElementById('articleID5attach');
+    if (isElementInViewport(targetSection)) {
+        articleID5attach.classList.add('animationN1');
+    } 
+}
+
+function delayedToggleAnimationN10() {
+    setTimeout(toggleAnimationN10, 1000);
+}
+
+window.addEventListener("scroll", delayedToggleAnimationN10);
+window.addEventListener("resize", delayedToggleAnimationN10);
+
+delayedToggleAnimationN10(); 
+
+// VIEWPORT ANIMATIONS 10 ---
+
+
+
+
 // RESET VIEWPORT ANIMATIONS
 
 const mainID1 = document.getElementById('mainID1');
@@ -212,7 +321,11 @@ const mainID3 = document.getElementById('mainID3');
 const mainID4 = document.getElementById('mainID4');
 const mainID5 = document.getElementById('mainID5');
 
-
+const articleID1 = document.getElementById('articleID1');
+const articleID2attach = document.getElementById('articleID2attach');
+const articleID3attach = document.getElementById('articleID3attach');
+const articleID4attach = document.getElementById('articleID4attach');
+const articleID5attach = document.getElementById('articleID5attach');
     
 function scrollValue3() {
     var scroll = window.scrollY;
@@ -222,6 +335,12 @@ function scrollValue3() {
         mainID3.classList.remove('animationN1');
         mainID4.classList.remove('animationN1');
         mainID5.classList.remove('animationN1');
+
+        articleID1.classList.remove('animationN1');
+        articleID2attach.classList.remove('animationN1');
+        articleID3attach.classList.remove('animationN1');
+        articleID4attach.classList.remove('animationN1');
+        articleID5attach.classList.remove('animationN1');
     } 
 }
 

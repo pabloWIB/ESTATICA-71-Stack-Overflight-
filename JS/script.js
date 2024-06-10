@@ -125,9 +125,10 @@ toggleAnimationN1();
 
 // VIEWPORT ANIMATIONS 2
 
+const mainID2attach = document.getElementById('mainID2attach');
+
 function toggleAnimationN2() {
     var targetSection = document.getElementById("mainID2");
-    var mainID2attach = document.getElementById('mainID2attach');
     if (isElementInViewport(targetSection)) {
         mainID2attach.classList.add('animationN1');
     } 
@@ -146,9 +147,10 @@ delayedToggleAnimationN2();
 
 // VIEWPORT ANIMATIONS 3
 
+const mainID3attach = document.getElementById('mainID3attach');
+
 function toggleAnimationN3() {
     var targetSection = document.getElementById("mainID3");
-    var mainID3attach = document.getElementById('mainID3attach');
     if (isElementInViewport(targetSection)) {
         mainID3attach.classList.add('animationN1');
     } 
@@ -167,9 +169,10 @@ delayedToggleAnimationN3();
 
 // VIEWPORT ANIMATIONS 4
 
+const mainID4attach = document.getElementById('mainID4attach');
+
 function toggleAnimationN4() {
     var targetSection = document.getElementById("mainID4");
-    var mainID4attach = document.getElementById('mainID4attach');
     if (isElementInViewport(targetSection)) {
         mainID4attach.classList.add('animationN1');
     } 
@@ -188,9 +191,10 @@ delayedToggleAnimationN4();
 
 // VIEWPORT ANIMATIONS 5
 
+const mainID5attach = document.getElementById('mainID5attach');
+
 function toggleAnimationN5() {
     var targetSection = document.getElementById("mainID5");
-    var mainID5attach = document.getElementById('mainID5attach');
     if (isElementInViewport(targetSection)) {
         mainID5attach.classList.add('animationN1');
     } 
@@ -229,9 +233,10 @@ delayedToggleAnimationN6();
 
 // VIEWPORT ANIMATIONS 7
 
+const articleID2attach = document.getElementById('articleID2attach');
+
 function toggleAnimationN7() {
     var targetSection = document.getElementById("articleID2");
-    var articleID2attach = document.getElementById('articleID2attach');
     if (isElementInViewport(targetSection)) {
         articleID2attach.classList.add('animationN1');
     } 
@@ -250,9 +255,10 @@ delayedToggleAnimationN7();
 
 // VIEWPORT ANIMATIONS 8
 
+const articleID3attach = document.getElementById('articleID3attach');
+
 function toggleAnimationN8() {
     var targetSection = document.getElementById("articleID3");
-    var articleID3attach = document.getElementById('articleID3attach');
     if (isElementInViewport(targetSection)) {
         articleID3attach.classList.add('animationN1');
     } 
@@ -271,9 +277,10 @@ delayedToggleAnimationN8();
 
 // VIEWPORT ANIMATIONS 9
 
+const articleID4attach = document.getElementById('articleID4attach');
+
 function toggleAnimationN9() {
     var targetSection = document.getElementById("articleID4");
-    var articleID4attach = document.getElementById('articleID4attach');
     if (isElementInViewport(targetSection)) {
         articleID4attach.classList.add('animationN1');
     } 
@@ -292,9 +299,10 @@ delayedToggleAnimationN9();
 
 // VIEWPORT ANIMATIONS 10
 
+const articleID5attach = document.getElementById('articleID5attach');
+
 function toggleAnimationN10() {
     var targetSection = document.getElementById("articleID5");
-    var articleID5attach = document.getElementById('articleID5attach');
     if (isElementInViewport(targetSection)) {
         articleID5attach.classList.add('animationN1');
     } 
@@ -314,18 +322,7 @@ delayedToggleAnimationN10();
 // RESET VIEWPORT ANIMATIONS
 
 const mainID1 = document.getElementById('mainID1');
-
-const mainID2attach = document.getElementById('mainID2attach');
-const mainID3attach = document.getElementById('mainID3attach');
-const mainID4attach = document.getElementById('mainID4attach');
-const mainID5attach = document.getElementById('mainID5attach');
-
 const articleID1 = document.getElementById('articleID1');
-
-const articleID2attach = document.getElementById('articleID2attach');
-const articleID3attach = document.getElementById('articleID3attach');
-const articleID4attach = document.getElementById('articleID4attach');
-const articleID5attach = document.getElementById('articleID5attach');
     
 function scrollValue3() {
     var scroll = window.scrollY;

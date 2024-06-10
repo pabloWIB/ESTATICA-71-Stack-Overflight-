@@ -1,11 +1,14 @@
 ![image](https://github.com/pabloWIB/ESTATICA-71-Stack-Overflight-/assets/116923433/109b6dca-21b5-4d12-850e-596de16093ed)
 
  
-<h2>Figma Design:</h2>
-<a href="https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1">
-<img src="https://skillicons.dev/icons?i=figma,stackoverflow,notion,ai,ps&perline=12" /></a>
+<h2 align="center">Figma Design: <a href="https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1">Maquetado en Figma</a></h2>
 
-Live Page: https://easybankpablonieto.surge.sh/
+<h2 align="center">Live Page: <a href="Live Page: https://easybankpablonieto.surge.sh/"></a>easybank.com</h2>
+
+
+
+<a href="https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1"><img src="https://skillicons.dev/icons?i=figma"/></a>
+<a href="[https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1](https://easybankpablonieto.surge.sh/)"><img src="https://skillicons.dev/icons?i=html"/></a>
 
 
 <h1>Easy Bank Frontend Project</h1>

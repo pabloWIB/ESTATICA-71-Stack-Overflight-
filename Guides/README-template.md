@@ -4,6 +4,7 @@
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [Built with](#built-with)
+- [What I learned](#what-i-learned)
 - [Continued development](#continued-development)
 
 
@@ -29,6 +30,24 @@ Users should be able to:
 - CSS - SASS (Prepros) custom properties
 - Flexbox - Display : Flex
 - [Jquery] (https://code.jquery.com/jquery-3.6.0.min.js) - JQuery library
+
+### What I learned
+
+I learned about svg fill property
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+</svg>
+```
+
+```css
+svg{
+    fill: White;
+}
+svg:hover{
+    fill: red;
+}
+```
 
 ### Continued development
 

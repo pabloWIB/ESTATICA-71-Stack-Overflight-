@@ -3,7 +3,7 @@
  
 <h2 align="center">Figma Design: <a href="https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1">Maquetado en Figma</a></h2>
 
-<h2 align="center">Live Page: <a href="Live Page: https://easybankpablonieto.surge.sh/">easybank.com</a></h2>
+<h2 align="center">Live Page: <a href="https://easybankpablonieto.surge.sh/">easybank.com</a></h2>
 
 
 

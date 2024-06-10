@@ -5,11 +5,19 @@
 
 <h2 align="center">Live Page: <a href="https://easybankpablonieto.surge.sh/">easybank.com</a></h2>
 
+<h2 >Tecnologías usadas👨🏻‍💻</h2>
+<br>
+<h4>Front end: </h4>
+<img src="https://skillicons.dev/icons?i=html,css,sass,js,jquery"/>
 
+<h4>Servicios: </h4>
+<img src="https://skillicons.dev/icons?i=git,github"/>
 
-<a href="https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1"><img src="https://skillicons.dev/icons?i=figma"/></a>
-<a href="[https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1](https://easybankpablonieto.surge.sh/)"><img src="https://skillicons.dev/icons?i=html"/></a>
+<h4>IDEs: </h4>
+<img src="https://skillicons.dev/icons?i=vscode"/>
 
+<h4>Apps:</h4>
+<img src="https://skillicons.dev/icons?i=figma" />
 
 <h1>Easy Bank Frontend Project</h1>
 

@@ -1,47 +1,46 @@
 <h1>Easy Bank Frontend Project</h1>
-Welcome to the Easy Bank frontend project, developed by Pablo Nieto (GitHub: pabloWIB)! This project is a part of a series of frontend challenges aimed at improving your skills in building user interfaces.
 
-Overview
-Easy Bank is a fictional banking application designed to simulate a modern and intuitive online banking experience. The goal of this project is to create a responsive and interactive user interface for managing banking activities such as viewing account summaries, transaction histories, and accessing various banking features.
+   <p>Welcome to the Easy Bank frontend project, developed by Pablo Nieto (GitHub: <a href="https://github.com/pabloWIB">pabloWIB</a>)! This project is a part of a series of frontend challenges aimed at improving your skills in building user interfaces.</p>
 
-Features
-Responsive Design: The application is designed to work seamlessly across different devices and screen sizes, providing a consistent user experience.
+    <h2>Overview</h2>
 
-Account Summaries: Users can view summaries of their accounts, including balances and recent transactions.
+    <p>Easy Bank is a fictional banking application designed to simulate a modern and intuitive online banking experience. The goal of this project is to create a responsive and interactive user interface for managing banking activities such as viewing account summaries, transaction histories, and accessing various banking features.</p>
 
-Transaction History: Users can access their transaction history, view details of individual transactions, and filter transactions based on criteria such as date and transaction type.
+    <h2>Features</h2>
 
-Navigation: The application includes a navigation menu for easy access to different sections and features.
+    <ul>
+        <li><strong>Responsive Design:</strong> The application is designed to work seamlessly across different devices and screen sizes, providing a consistent user experience.</li>
+        <li><strong>Account Summaries:</strong> Users can view summaries of their accounts, including balances and recent transactions.</li>
+        <li><strong>Transaction History:</strong> Users can access their transaction history, view details of individual transactions, and filter transactions based on criteria such as date and transaction type.</li>
+        <li><strong>Navigation:</strong> The application includes a navigation menu for easy access to different sections and features.</li>
+        <li><strong>Interactive Elements:</strong> Various interactive elements such as buttons, dropdowns, and forms are implemented to enhance user interaction.</li>
+    </ul>
 
-Interactive Elements: Various interactive elements such as buttons, dropdowns, and forms are implemented to enhance user interaction.
+    <h2>Technologies Used</h2>
 
-Technologies Used
-HTML5: Used for structuring the content of the web pages.
+    <ul>
+        <li><strong>HTML5:</strong> Used for structuring the content of the web pages.</li>
+        <li><strong>CSS3 (Sass):</strong> Used for styling the user interface and creating responsive layouts.</li>
+        <li><strong>JavaScript (Vanilla JS, jQuery):</strong> Used for implementing interactive features and enhancing user experience.</li>
+    </ul>
 
-CSS3 (Sass): Used for styling the user interface and creating responsive layouts.
+    <h2>Getting Started</h2>
 
-JavaScript (Vanilla JS, jQuery): Used for implementing interactive features and enhancing user experience.
+    <p>To get started with the Easy Bank frontend project, follow these steps:</p>
 
-Getting Started
-To get started with the Easy Bank frontend project, follow these steps:
+    <ol>
+        <li>Clone this repository to your local machine using <code>git clone</code>.</li>
+        <li>Open the project directory in your code editor.</li>
+        <li>Explore the project files and review the HTML, CSS, and JavaScript code.</li>
+        <li>Make changes or additions as needed to customize the project according to your preferences or practice specific frontend skills.</li>
+        <li>Test the application locally by opening the <code>index.html</code> file in a web browser.</li>
+    </ol>
 
-Clone this repository to your local machine using git clone.
+    <h2>Contributing</h2>
 
-Open the project directory in your code editor.
+    <p>Contributions to the Easy Bank frontend project are welcome! If you have ideas for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.</p>
 
-Explore the project files and review the HTML, CSS, and JavaScript code.
+    <h2>License</h2>
 
-Make changes or additions as needed to customize the project according to your preferences or practice specific frontend skills.
-
-Test the application locally by opening the index.html file in a web browser.
-
-Contributing
-Contributions to the Easy Bank frontend project are welcome! If you have ideas for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License.
-
-Feel free to copy and paste this README into your project repository on GitHub, and customize it further if needed. If you have any questions or need further assistance, just let me know!
-
-
-
+    <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+    

@@ -127,8 +127,9 @@ toggleAnimationN1();
 
 function toggleAnimationN2() {
     var targetSection = document.getElementById("mainID2");
+    var mainID2attach = document.getElementById('mainID2attach');
     if (isElementInViewport(targetSection)) {
-        targetSection.classList.add('animationN1');
+        mainID2attach.classList.add('animationN1');
     } 
 }
 
@@ -147,8 +148,9 @@ delayedToggleAnimationN2();
 
 function toggleAnimationN3() {
     var targetSection = document.getElementById("mainID3");
+    var mainID3attach = document.getElementById('mainID3attach');
     if (isElementInViewport(targetSection)) {
-        targetSection.classList.add('animationN1');
+        mainID3attach.classList.add('animationN1');
     } 
 }
 
@@ -167,8 +169,9 @@ delayedToggleAnimationN3();
 
 function toggleAnimationN4() {
     var targetSection = document.getElementById("mainID4");
+    var mainID4attach = document.getElementById('mainID4attach');
     if (isElementInViewport(targetSection)) {
-        targetSection.classList.add('animationN1');
+        mainID4attach.classList.add('animationN1');
     } 
 }
 
@@ -187,8 +190,9 @@ delayedToggleAnimationN4();
 
 function toggleAnimationN5() {
     var targetSection = document.getElementById("mainID5");
+    var mainID5attach = document.getElementById('mainID5attach');
     if (isElementInViewport(targetSection)) {
-        targetSection.classList.add('animationN1');
+        mainID5attach.classList.add('animationN1');
     } 
 }
 
@@ -202,7 +206,6 @@ window.addEventListener("resize", delayedToggleAnimationN5);
 delayedToggleAnimationN5(); 
 
 // VIEWPORT ANIMATIONS 5 ---
-
 
 // VIEWPORT ANIMATIONS 6
 
@@ -224,7 +227,6 @@ delayedToggleAnimationN6();
 
 // VIEWPORT ANIMATIONS 6 ---
 
-
 // VIEWPORT ANIMATIONS 7
 
 function toggleAnimationN7() {
@@ -236,7 +238,7 @@ function toggleAnimationN7() {
 }
 
 function delayedToggleAnimationN7() {
-    setTimeout(toggleAnimationN7, 700);
+    setTimeout(toggleAnimationN7, 250);
 }
 
 window.addEventListener("scroll", delayedToggleAnimationN7);
@@ -245,7 +247,6 @@ window.addEventListener("resize", delayedToggleAnimationN7);
 delayedToggleAnimationN7(); 
 
 // VIEWPORT ANIMATIONS 7 ---
-
 
 // VIEWPORT ANIMATIONS 8
 
@@ -258,7 +259,7 @@ function toggleAnimationN8() {
 }
 
 function delayedToggleAnimationN8() {
-    setTimeout(toggleAnimationN8, 800);
+    setTimeout(toggleAnimationN8, 300);
 }
 
 window.addEventListener("scroll", delayedToggleAnimationN8);
@@ -279,7 +280,7 @@ function toggleAnimationN9() {
 }
 
 function delayedToggleAnimationN9() {
-    setTimeout(toggleAnimationN9, 900);
+    setTimeout(toggleAnimationN9, 350);
 }
 
 window.addEventListener("scroll", delayedToggleAnimationN9);
@@ -300,7 +301,7 @@ function toggleAnimationN10() {
 }
 
 function delayedToggleAnimationN10() {
-    setTimeout(toggleAnimationN10, 1000);
+    setTimeout(toggleAnimationN10, 400);
 }
 
 window.addEventListener("scroll", delayedToggleAnimationN10);
@@ -310,18 +311,17 @@ delayedToggleAnimationN10();
 
 // VIEWPORT ANIMATIONS 10 ---
 
-
-
-
 // RESET VIEWPORT ANIMATIONS
 
 const mainID1 = document.getElementById('mainID1');
-const mainID2 = document.getElementById('mainID2');
-const mainID3 = document.getElementById('mainID3');
-const mainID4 = document.getElementById('mainID4');
-const mainID5 = document.getElementById('mainID5');
+
+const mainID2attach = document.getElementById('mainID2attach');
+const mainID3attach = document.getElementById('mainID3attach');
+const mainID4attach = document.getElementById('mainID4attach');
+const mainID5attach = document.getElementById('mainID5attach');
 
 const articleID1 = document.getElementById('articleID1');
+
 const articleID2attach = document.getElementById('articleID2attach');
 const articleID3attach = document.getElementById('articleID3attach');
 const articleID4attach = document.getElementById('articleID4attach');
@@ -331,10 +331,10 @@ function scrollValue3() {
     var scroll = window.scrollY;
     if (scroll < 10) {
         mainID1.classList.remove('animationN1');
-        mainID2.classList.remove('animationN1');
-        mainID3.classList.remove('animationN1');
-        mainID4.classList.remove('animationN1');
-        mainID5.classList.remove('animationN1');
+        mainID2attach.classList.remove('animationN1');
+        mainID3attach.classList.remove('animationN1');
+        mainID4attach.classList.remove('animationN1');
+        mainID5attach.classList.remove('animationN1');
 
         articleID1.classList.remove('animationN1');
         articleID2attach.classList.remove('animationN1');

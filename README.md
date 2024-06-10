@@ -44,6 +44,11 @@
    <p>Contributions to the Easy Bank frontend project are welcome! If you have ideas for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.</p>
 
    <h2>License</h2>
+      <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+
+   <br><br><br>
+
+
 
 
 <p>Bienvenido al proyecto frontend de Easybank, desarrollado por Pablo Nieto (GitHub: <a href="https://github.com/pabloWIB">pabloWIB</a>)</p>
@@ -92,4 +97,4 @@
 
    <p>Este proyecto está bajo la <a href="LICENSE">Licencia MIT</a>.</p>
 
-   <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+

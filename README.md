@@ -1,10 +1,10 @@
 <h1>Easy Bank Frontend Project</h1>
 
-<p>Welcome to the Easy Bank frontend project, developed by Pablo Nieto (GitHub: <a href="https://github.com/pabloWIB">pabloWIB</a>)! This project is a part of a series of frontend challenges aimed at improving your skills in building user interfaces.</p>
+<p>Welcome to the Easy Bank frontend project, developed by Pablo Nieto (GitHub: <a href="https://github.com/pabloWIB">pabloWIB</a>)</p>
 
 <h2>Overview</h2>
 
-<p>Easy Bank is a fictional banking application designed to simulate a modern and intuitive online banking experience. The goal of this project is to create a responsive and interactive user interface for managing banking activities such as viewing account summaries, transaction histories, and accessing various banking features.</p>
+<p>Easy Bank is a fictional banking application designed to simulate a modern and intuitive online banking experience. The goal of this project is to create a responsive and interactive user interface</p>
 
 <h2>Features</h2>
 

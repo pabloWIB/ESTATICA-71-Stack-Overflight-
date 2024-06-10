@@ -1,6 +1,10 @@
 ![image](https://github.com/pabloWIB/ESTATICA-71-Stack-Overflight-/assets/116923433/109b6dca-21b5-4d12-850e-596de16093ed)
 
-Figma Design: https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1
+ 
+<h2>Figma Design:</h2>
+<a href="https://www.figma.com/design/22RSX5usjkNArhNapsa9In/Untitled?node-id=1-402&t=CTTFe0sdNQfC32DI-1">
+<img src="https://skillicons.dev/icons?i=figma,stackoverflow,notion,ai,ps&perline=12" /></a>
+
 Live Page: https://easybankpablonieto.surge.sh/
 
 

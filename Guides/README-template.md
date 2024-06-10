@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/pabloWIB/ESTATICA-71-Stack-Overflight-)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Easybank Landing page](https://github.com/pabloWIB/ESTATICA-71-Stack-Overflight-)
+- Live Site URL: [easybank.com](https://easybankpablonieto.surge.sh/)
 
 ### Built with
 

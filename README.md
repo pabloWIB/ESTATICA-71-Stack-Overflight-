@@ -1,3 +1,6 @@
+![image](https://github.com/pabloWIB/ESTATICA-71-Stack-Overflight-/assets/116923433/109b6dca-21b5-4d12-850e-596de16093ed)
+
+
 <h1>Easy Bank Frontend Project</h1>
 
 <p>Welcome to the Easybank frontend project, developed by Pablo Nieto (GitHub: <a href="https://github.com/pabloWIB">pabloWIB</a>)</p>

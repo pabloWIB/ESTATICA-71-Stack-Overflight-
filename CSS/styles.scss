@@ -1068,3 +1068,162 @@ body{
 
 // ARTICLE MEDIAS (875px) TABLET / PHONE ---
 
+// FOOTER
+
+body{
+    footer{
+        background: $DarkBlue;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        place-content: center;
+        padding: 50px 0px;
+        >:nth-child(1){
+            width: 85%;
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 6.5rem;
+                >:nth-child(1){
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-between;
+                    height: 100%;
+                    gap: 3.85rem;
+                    >:nth-child(1){
+                        width: 100%;
+                        max-width: 12rem;
+                        img{
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                    }
+                    >:nth-child(2){
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: .95rem;
+                        svg{
+                            fill: $White;
+                            cursor: pointer;
+                            transition: .1s;
+                            &:hover{
+                                fill: $DarkLimaGreen;
+                                transition: .1s;
+                            }
+                        }
+                    }
+                }
+                >:nth-child(2),>:nth-child(3){
+                    display: flex;
+                    flex-flow: column wrap;
+                    gap: 1.5rem;
+                    a{
+                        all: unset;
+                        cursor: pointer;
+                        transition: .3s;
+                        font-size: 15.5px;
+                        font-weight: 500;
+                        color: $LightGrayishBlue;
+                        &:hover{
+                            color: $DarkLimaGreen;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+            >:nth-child(2){
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                gap: 2rem;
+                >:nth-child(1){
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-end;
+                }
+                >:nth-child(2){
+                    p{
+                        all: unset;
+                        font-size: 15.5px;
+                        color: $GrayishBlue;
+                        cursor: default;
+                    }
+                    p::selection{
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER---
+
+// FOOTER MEDIAS(960px) TABLET / PHONE ---
+
+@media(max-width:960px){
+    body{
+        footer{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            place-content: center;
+            padding: 50px 0px;
+            >:nth-child(1){
+                width: 90%;
+                max-width: 1440px;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 3.5rem;
+                >:nth-child(1){
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    >:nth-child(1){
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: space-between;
+                        height: 100%;
+                        gap: 2rem;
+                        align-items: center;
+                        margin-bottom: 1.5rem;
+                        >:nth-child(2){
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 2rem;
+                        }
+                    }
+                    >:nth-child(2),>:nth-child(3){
+                        display: flex;
+                        flex-flow: column wrap;
+                        align-items: center;
+                        gap: 2rem;
+                    }
+                }
+                >:nth-child(2){
+                    gap: 2rem;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+// FOOTER MEDIAS(960px) TABLET / PHONE --- ---
